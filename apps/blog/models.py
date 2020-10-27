@@ -6,7 +6,11 @@ class Post(models.Model):
     slug = models.SlugField()
     author = models.ForeignKey(User,on_delete=models.CASCADE,related_name='blog_posts')
     created = models.DateTimeField(auto_now_add=True)
+    update = models.DateTimeField(auto_now=True)
     description = models.TextField()
+    image = models.ImageField(upload_to='media', blank=True)
+    # short_description= models.TextField()
+
 
     class Meta:
         ordering = ('-created',)

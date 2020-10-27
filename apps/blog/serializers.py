@@ -4,12 +4,12 @@ from .models import Post,Comment
 class PostSerializer(serializers.ModelSerializer): 
     class Meta:
         model = Post
-        fields = ('url','title', 'description',)
+        fields = ('id','created','title', 'description','url')
 
 class PostDetailSerializer(serializers.ModelSerializer):
     class Meta:
         model = Post
-        fields = ('id','title','author','created', 'description', 'comments',)
+        fields = ('id','created','update','title','description', 'author','image')
         
 
 class PostCreatedSerializer(serializers.ModelSerializer):

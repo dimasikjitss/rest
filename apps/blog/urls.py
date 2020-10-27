@@ -7,5 +7,4 @@ urlpatterns = [
     path('<int:pk>/',views.PostDetailView.as_view(), name='post-detail'),
     path('comment/<int:pk>/',views.CommentDetailView.as_view(), name='comment-detail'),
     path('comment-create/', views.CommentCreateView.as_view(), name='comment-create'),
-
 ]

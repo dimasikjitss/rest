@@ -25,7 +25,7 @@ SECRET_KEY = '=f9l^aatp77a5c&m)wm4#*mg^rug67v7n(o=odua9k33k3mo6o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost','deveem-test.herokuapp.com',]
 
 
 # Application definition
